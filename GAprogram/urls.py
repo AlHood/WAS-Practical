@@ -20,7 +20,7 @@ from WASapp import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('courses/', views.courses, name='courses'),
     path('WASapp/', include('WASapp.urls')),
-
     path('admin/', admin.site.urls),
 ]

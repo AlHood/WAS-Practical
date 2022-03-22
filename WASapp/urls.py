@@ -5,4 +5,5 @@ app_name = 'WASapp'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('', views.courses, name='courses'),
 ]
