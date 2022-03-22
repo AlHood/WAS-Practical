@@ -8,7 +8,7 @@
 		<title>Courses</title>
 	</head>
 	<body style="background-color:yellow;">
-		<h1> This is H1 </h1>
+		<p> The list of courses provided by the GA program: </p>
 		<div>
 		<br />
 			<strong></strong><br />
@@ -17,8 +17,8 @@
 		{% if courses %}
 			<ul>
 			{% for course in courses %}
-				<li>{{ course.name }}</li>
-				<li>{{course.date }}</li>
+				<li><h1>{{ course.name }}</h1></li>
+				<li><strong>{{course.date }}</strong></li>
 				<li>{{course.desc}}</li>
 				<br />
 			{% endfor %}
