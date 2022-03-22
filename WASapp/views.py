@@ -7,4 +7,5 @@ def index(request):
 # Create your views here.
 
 def courses(request):
-    return HttpResponse("This is Courses!")
+    context_dict = {}
+    return render(request, 'WASapp/index.html', context=context_dict)
